@@ -20,7 +20,7 @@
 <div class="bg-[#f4f7ff] h-screen">
     <div class="md:container md:mx-auto bg-[#f4f7ff] pt-8">
         <div class="flex flex-wrap flex-row justify-between w-full">
-            <div class="overflow-hidden md:w-8/12 w-full">
+            <div class="overflow-hidden md:w-7/12 w-full">
                 {#if isLoading}
                     <p>Loading...</p>
                 {:else if error}
@@ -29,7 +29,7 @@
                     <Table {countries}/>
                 {/if}
             </div>
-            <div class="md:w-4/12 w-full mx-auto mt-12 md:mt-0">
+            <div class="md:w-4/12 w-full mx-auto md:mx-0 mt-12 md:mt-0">
                 <PolarChart {countriesName} {countriesPopulation} />
             </div>
         </div>

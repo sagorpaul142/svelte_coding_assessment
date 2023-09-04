@@ -35,7 +35,7 @@
 </script>
 
 
-<div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 md:ml-5">
+<div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
     <div class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50">
         <div class="inline-block p-4 text-black text-xl rounded-tl-lg  border-blue-600">
             Countries
