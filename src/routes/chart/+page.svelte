@@ -3,6 +3,7 @@
     import {load} from "./+page.js";
     import {onMount} from "svelte";
     import {filterCountriesName, filterCountriesPopulation, formattedCounties} from "../../utils/common.js";
+    import Table from "../../components/Table.svelte";
 
     const {data, error, isLoading} = $countryDataStore;
 
@@ -18,7 +19,6 @@
 
 <div class="bg-[#f4f7ff] h-screen">
     <div class="md:container md:mx-auto bg-[#f4f7ff] pt-8">
-        <h1>Chart</h1>
         <div class="flex flex-wrap flex-row justify-between w-full">
             <div class="overflow-hidden md:w-8/12 w-full">
                 {#if isLoading}
@@ -26,10 +26,12 @@
                 {:else if error}
                     <p>Error :{error}</p>
                 {:else }
-                    <div class=""></div>
+                    <Table {countries} />
                 {/if}
             </div>
-            <div class="md:w-4/12 w-full mx-auto mt-12 md:mt-0"></div>
+            <div class="md:w-4/12 w-full mx-auto mt-12 md:mt-0">
+
+            </div>
         </div>
     </div>
 </div>

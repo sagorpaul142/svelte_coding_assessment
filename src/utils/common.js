@@ -1,6 +1,6 @@
 export function formattedCounties(countriesData) {
-    let filterData = countriesData.slice(0, 10);
-    filterData.map(country => {
+    let filterData;
+    filterData = countriesData.slice(0, 10).map(country => {
         return {
             name: country.name.common,
             flag: country.flag,
@@ -13,7 +13,6 @@ export function formattedCounties(countriesData) {
             languages: country.languages
         }
     })
-
     return filterData
 }
 
