@@ -21,7 +21,7 @@
                 }),
             ],
             view: new View({
-                center: [0, 0],
+                center: [90.4125, 23.8103],
                 zoom: 2,
             }),
         });
