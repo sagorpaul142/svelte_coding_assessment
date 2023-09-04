@@ -1,17 +1,17 @@
-# create-svelte
+# Getting Started
+<hr/>
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
+First, clone the code project:
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
+git clone https://github.com/sagorpaul142/svelte_coding_assessment.git
+```
+Second, then open a terminal in the project folder
 
-# create a new project in my-app
-npm create svelte@latest my-app
+Third, write down the belows command in the terminal and then enter, after that all the dependencies install
+
+```bash
+npm install
 ```
 
 ## Developing
@@ -25,14 +25,8 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+Open http://localhost:5173/ with your browser to see the result.
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+# Link
+<h6>Github link : https://github.com/sagorpaul142/svelte_coding_assessment </h6>
+<h6>Live link : https://svelte-project-zeta.vercel.app/ </h6>
