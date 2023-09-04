@@ -4,13 +4,13 @@
     import {onMount} from "svelte";
     import {filterCountriesName, filterCountriesPopulation, formattedCounties} from "../../utils/common.js";
     import Table from "../../components/Table.svelte";
+    import PolarChart from "../../components/PolarChart.svelte";
 
     const {data, error, isLoading} = $countryDataStore;
 
     const countries = formattedCounties(data)
     const countriesName = filterCountriesName(countries)
     const countriesPopulation = filterCountriesPopulation(countries)
-
 
     onMount(() => {
         load()
@@ -26,11 +26,11 @@
                 {:else if error}
                     <p>Error :{error}</p>
                 {:else }
-                    <Table {countries} />
+                    <Table {countries}/>
                 {/if}
             </div>
             <div class="md:w-4/12 w-full mx-auto mt-12 md:mt-0">
-
+                <PolarChart {countriesName} {countriesPopulation} />
             </div>
         </div>
     </div>
